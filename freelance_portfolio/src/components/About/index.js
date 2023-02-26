@@ -11,9 +11,14 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useGlobalContext } from '../context/context'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const { variants, cursorVariant, textEnter, textLeave } = useGlobalContext()
+
   const headingStr = 'About me'
   const arrayString = [...headingStr]
 
@@ -55,6 +60,19 @@ const About = () => {
             obcaecati doloribus consequatur, fuga blanditiis, dicta temporibus
             consequuntur harum quidem. Tempore, aliquid. Nemo, deleniti?
           </p>
+          <Link
+            to="/portfolio"
+            className="myWorkButton"
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
+          >
+            MY WORK
+          </Link>
+          <motion.div
+            className="cursor"
+            variants={variants}
+            animate={cursorVariant}
+          />
         </div>
 
         <div className="stage-cube-cont">
