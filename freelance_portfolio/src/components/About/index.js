@@ -44,22 +44,10 @@ const About = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-            repellat natus reiciendis, dolorem eaque quisquam, quidem aut rerum
-            beatae numquam accusamus magni quas architecto veritatis facilis
-            dolor itaque maxime. Sequi.
+            I'm a developer, problem-solver and bookoholic. I am a passionate
+            freelancer bringing you programming and design from the future.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            ab labore vitae voluptatum hic iure, nihil qui non, at atque maiores
-            ex perferendis soluta ad earum voluptates a provident voluptas!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt,
-            tempora ipsa necessitatibus itaque voluptate magnam placeat
-            obcaecati doloribus consequatur, fuga blanditiis, dicta temporibus
-            consequuntur harum quidem. Tempore, aliquid. Nemo, deleniti?
-          </p>
+
           <Link
             to="/portfolio"
             className="myWorkButton"
